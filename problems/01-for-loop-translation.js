@@ -6,14 +6,14 @@ to use a `for` loop instead of the `while` loop it is currently using.
 */
 
 function aCounter(word) {
-  let index = 0;
+  // let index = 0;
   let count = 0;
-  while (index < word.length) {
-    let char = word[index];
+  // while (index < word.length) {
+  for (let i = 0; i < word.length; i++){
+    let char = word[i];
     if (char === "a" || char === "A") {
       count += 1;
     }
-    index++;
   }
   return count;
 };

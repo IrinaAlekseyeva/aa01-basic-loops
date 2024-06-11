@@ -5,12 +5,17 @@ half of characters in the string parameter.
 */
 
 function firstHalf(str) {
-  // Your code here 
+  let newStr = "";
+  for (i = 0; i < Math.round((str.length)/2); i++){
+    newStr = newStr + str[i];
+   // console.log(newStr);
+  }
+  return newStr;
 }
 
-// console.log(firstHalf('academy')); // 'acad'
-// console.log(firstHalf('planet'));  // 'pla'
-// console.log(firstHalf('sport'));   // 'spo'
+//  console.log(firstHalf('academy')); // 'acad'
+//  console.log(firstHalf('planet'));  // 'pla'
+//  console.log(firstHalf('sport'));   // 'spo'
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

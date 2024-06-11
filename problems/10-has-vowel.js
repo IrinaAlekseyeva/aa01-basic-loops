@@ -5,9 +5,18 @@ otherwise.
 
 Vowels are the letters "a", "e", "i", "o", "u".
 */
-
-// Your code here 
-
+function hasVowel(str){
+    if(str.includes("a") ||
+       str.includes("e") ||
+       str.includes("i") ||
+       str.includes("o") ||
+       str.includes("u") ){
+            return true;
+        } else {
+            return false;
+        }
+}
+// console.log(hasVowel("apple"));
 // console.log(hasVowel('dog'));          // => true
 // console.log(hasVowel('conventional')); // => true
 // console.log(hasVowel('rhythm'));       // => false

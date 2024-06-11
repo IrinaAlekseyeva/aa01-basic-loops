@@ -5,7 +5,12 @@ half of characters in the string parameter.
 */
 
 function secondHalf(str) {
-  // Your code here 
+  let newStr = "";
+  for (i = Math.round((str.length)/2); i < str.length; i++){
+    newStr = newStr + str[i];
+   // console.log(newStr);
+  }
+  return newStr;
 }
 
 // console.log(secondHalf('academy')); // 'emy'
