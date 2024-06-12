@@ -17,13 +17,21 @@ So the two rules for our version of Pig Latin are:
 */
 
 function pigLatinWord(word) {
-    // Your code here 
+   if("aeiou".includes(word[0])){
+        return word+"yay";
+   } else {
+    for(let i = 0; i < word.length; i++){
+        if("aeiou".includes(word[i])){
+            return word.slice(i)+word.slice(0,i)+"ay";
+        }
+    }
+   }
 };
 
-// console.log(pigLatinWord("apple")); //=> "appleyay"
-// console.log(pigLatinWord("eat")); //=> "eatyay"
-// console.log(pigLatinWord("banana")); //=> "ananabay"
-// console.log(pigLatinWord("trash")); //=> "ashtray"
+console.log(pigLatinWord("apple")); //=> "appleyay"
+console.log(pigLatinWord("eat")); //=> "eatyay"
+console.log(pigLatinWord("banana")); //=> "ananabay"
+console.log(pigLatinWord("trash")); //=> "ashtray"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = pigLatinWord;
